@@ -11,11 +11,6 @@ namespace CalculadoraDeImpostos
         static void Main(string[] args)
         {
             Calculadora c = new Calculadora();
-            List<RegraDeCalculo> regras = new List<RegraDeCalculo>();
-
-            regras.Add(new RegraDeCalculo(new CalculoAliquotaDesconto(0.075, 0), 0, 1500));
-            regras.Add(new RegraDeCalculo(new CalculoAliquotaDesconto(0.15, 17), 1501, 2500));
-            regras.Add(new RegraDeCalculo(new CalculoAliquotaDesconto(0.275, 35), 2500));
 
             while (true)
             {
@@ -23,7 +18,7 @@ namespace CalculadoraDeImpostos
                 {
                     Console.Write("Digite um valor para o salário: R$ ");
                     double salario = Convert.ToDouble(Console.ReadLine());
-                    double imposto = c.calcularImposto(salario, regras);
+                    double imposto = c.calcularImposto(salario);
                     Console.WriteLine("Imposto de R$ " + imposto);
                 }
                 catch (Exception)

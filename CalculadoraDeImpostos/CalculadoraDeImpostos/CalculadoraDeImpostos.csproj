@@ -43,10 +43,12 @@
   <ItemGroup>
     <Compile Include="Calculadora.cs" />
     <Compile Include="CalculoAliquotaDesconto.cs" />
+    <Compile Include="FaixaSalarial.cs" />
     <Compile Include="IBaseCalculo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegraDeCalculo.cs" />
+    <Compile Include="RegraDeCalculoFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
