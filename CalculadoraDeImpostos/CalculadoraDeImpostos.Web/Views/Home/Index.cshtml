@@ -1,0 +1,29 @@
+﻿@model CalculadoraDeImpostos.Web.Models.CalculadoraViewModel
+@{
+    ViewBag.Title = "Calculadora de Impostos";
+}
+
+@using (Html.BeginForm("Calcular", "Home", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.Salario, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-6">
+            @Html.TextBoxFor(model => model.Salario, new { @class = "form-control" })
+        </div>
+        <div class="col-sm-6">
+            @Html.ValidationMessageFor(model => model.Salario)
+        </div>
+    </div>
+
+    <div class="form-group col-sm-12">
+        <button type="submit" class="btn btn-primary">Calcular</button>
+    </div>
+
+    if (Model != null)
+    {
+        <p class="lead">Imposto calculado: R$ @Model.Imposto</p>
+    }
+}
+

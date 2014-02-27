@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDeImpostos", "Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDeImpostos.Tests", "CalculadoraDeImpostos.Tests\CalculadoraDeImpostos.Tests.csproj", "{3FB1DF8A-95E0-499F-94B0-8731F6D43F7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDeImpostos.Web", "CalculadoraDeImpostos.Web\CalculadoraDeImpostos.Web.csproj", "{F775BA23-19EC-4D3D-9856-AE82381FFAFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3FB1DF8A-95E0-499F-94B0-8731F6D43F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FB1DF8A-95E0-499F-94B0-8731F6D43F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FB1DF8A-95E0-499F-94B0-8731F6D43F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F775BA23-19EC-4D3D-9856-AE82381FFAFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F775BA23-19EC-4D3D-9856-AE82381FFAFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F775BA23-19EC-4D3D-9856-AE82381FFAFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F775BA23-19EC-4D3D-9856-AE82381FFAFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
